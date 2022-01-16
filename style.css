@@ -1,0 +1,176 @@
+/*alignment*/
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+body {
+  color: black;
+  font-family: Arial;
+  background-image: url(bg.png), linear-gradient(left , #FF0066, #8164B1);
+  background-image: url(bg.png), -o-linear-gradient(left , #FF0066, #8164B1);
+  background-image: url(bg.png), -moz-linear-gradient(left , #FF0066, #8164B1);
+  background-image: url(bg.png), -webkit-linear-gradient(left , #FF0066, #8164B1);
+  background-repeat: repeat, repeat-y;
+  background-size: 50%, auto;
+}
+* {
+  box-sizing: border-box;
+}
+.leftborder {
+  position:relative;
+  z-index: -1;
+  width: 15%;
+  float: left;
+  display:block;
+}
+.main {
+  background-color: white;
+  position:relative;
+  z-index: 1;
+  width: 70%;
+  float: left;
+  display:block;
+  min-height: 101%;
+  box-shadow: 0 12px 50px 0 rgba(0,0,0,0.24), 0 17px 500px 0 rgba(0,0,0,0.19);
+  -moz-box-shadow: 0 12px 50px 0 rgba(0,0,0,0.24), 0 17px 500px 0 rgba(0,0,0,0.19);
+  -o-box-shadow: 0 12px 50px 0 rgba(0,0,0,0.24), 0 17px 500px 0 rgba(0,0,0,0.19);
+  -webkit-box-shadow: 0 12px 50px 0 rgba(0,0,0,0.24), 0 17px 500px 0 rgba(0,0,0,0.19);
+  /*overflow-y: visible;
+  overflow-x: hidden;*/
+}
+.rightborder {
+  position:relative;
+  z-index: -1;
+  width: 15%;
+  float: right;
+  display:block;
+}
+
+/*text*/
+p {
+  /*padding-left: 20%;
+  padding-right: 20%;*/
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 120%;
+}
+h1 {
+  font-size: 320%;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+h3 {
+  padding-left: 5%;
+  padding-right: 5%;
+  /*font-size: 1%;*/
+}
+ul {
+  font-size: 120%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+a {
+  color: #FF0066;
+}
+a:link {
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  text-decoration: underline;
+}
+button {
+  background-color: transparent;
+  border: transparent;
+  font-size: 110%;
+  color: grey;
+  width: 30%;
+  height: 100%;
+  /*padding-left: 5%;
+  padding-right: 5%;*/
+}
+button:hover {
+  /*background-color: lightgrey;
+  border: 2px solid lightgrey;
+  color: white;*/
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  -moz-box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  -o-box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  -webkit-box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.gradtext {
+  background: linear-gradient(to right , #FF0066, #8164B1);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: bold;
+}
+.bottombar {
+  background-color: lightgrey;
+  color: dimgrey;
+  padding-bottom: 1%;
+  min-height: 15%;
+  width: 100%;
+  float: left;
+  display:table;
+}
+.a-bottombar {
+  color: dimgrey;
+  text-decoration: underline;
+}
+
+/*images*/
+img {
+  height: 320px;
+  width: auto;
+}
+.popimgbox {
+  /*container for popimg*/
+  padding-left:5%;
+  padding-right:5%;
+  padding-top:2%;
+  padding-bottom:2%;
+}
+.popimg {
+  /*shadowed popping up images*/
+  height: auto;
+  width: 290px;
+  display: inline-block;
+  border-radius: 12px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  -moz-box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  -o-box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  -webkit-box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*design elements*/
+.gradline {
+  height: 5px;
+  background-color: grey;
+  width: 90%;
+  margin: 0 auto;
+  background-image: linear-gradient(left , #FF0066, #8164B1);
+  background-image: -o-linear-gradient(left , #FF0066, #8164B1);
+  background-image: -moz-linear-gradient(left , #FF0066, #8164B1);
+  background-image: -webkit-linear-gradient(left , #FF0066, #8164B1);
+  background-image: -ms-linear-gradient(left , #FF0066, #8164B1);
+}
+.fadeline {
+  height: 3px;
+  background-color: grey;
+  width: 65%;
+  margin: 0 auto;
+  background-image: linear-gradient(left , white 2%, lightgrey 50%, white 98%);
+  background-image: -o-linear-gradient(left , white 2%, lightgrey 50%, white 98%);
+  background-image: -moz-linear-gradient(left , white 2%, lightgrey 50%, white 98%);
+  background-image: -webkit-linear-gradient(left , white 2%, lightgrey 50%, white 98%);
+  background-image: -ms-linear-gradient(left , white 2%, lightgrey 50%, white 98%);
+}
