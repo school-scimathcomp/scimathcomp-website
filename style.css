@@ -16,7 +16,7 @@ body {
   background-size: 35%, auto;
 }
 * {
-  box-sizing: border-box;
+  box-sizing: border-box
 }
 .leftborder {
   position:relative;
@@ -90,11 +90,14 @@ button {
   background-color: transparent;
   border: transparent;
   font-size: 110%;
+  text-align: center;
   color: grey;
   width: 30%;
   height: 100%;
+  padding: 2% 0 2%;
   /*padding-left: 5%;
-  padding-right: 5%;*/
+  padding-right: 5%;
+  float:inherit;*/
 }
 button:hover {
   /*background-color: lightgrey;
