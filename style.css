@@ -13,7 +13,7 @@ body {
   background-image: url(bg.png), -moz-linear-gradient(left , #FF0066, #8164B1);
   background-image: url(bg.png), -webkit-linear-gradient(left , #FF0066, #8164B1);
   background-repeat: repeat, repeat-y;
-  background-size: 50%, auto;
+  background-size: 35%, auto;
 }
 * {
   box-sizing: border-box;
@@ -21,7 +21,7 @@ body {
 .leftborder {
   position:relative;
   z-index: -1;
-  width: 15%;
+  width: 10%;
   float: left;
   display:block;
 }
@@ -29,7 +29,7 @@ body {
   background-color: white;
   position:relative;
   z-index: 1;
-  width: 70%;
+  width: 80%;
   float: left;
   display:block;
   min-height: 101%;
@@ -43,7 +43,7 @@ body {
 .rightborder {
   position:relative;
   z-index: -1;
-  width: 15%;
+  width: 10%;
   float: right;
   display:block;
 }
